@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thebookify Payroll | Email Template</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.847);
+      }
+      .container {
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        min-height: 100vh;
+        background-color: #ffffff;
+        margin-bottom: 2rem;
+        border-bottom: 5px solid #0d4f82;
+      }
+      .logo-box {
+        width: 100%;
+        background-color: #000;
+        display: grid;
+        place-items: center;
+      }
+      .logo-img {
+        width: 170px;
+        margin: 0.2rem;
+      }
+      /* banner */
+      .banner {
+        position: relative;
+        overflow: hidden;
+      }
+      .banner .content > :is(h1, p, a) {
+        position: relative;
+        z-index: 1;
+      }
+      .content {
+        padding: 1.5rem;
+        padding-top: 4rem;
+        height: 250px;
+      }
+      .banner-img {
+        background: url(https://i.postimg.cc/VLkQzPBm/banner.jpg);
+        background-size: 105%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        inset: 0;
+        width: 700px;
+        height: 250px;
+        z-index: 0;
+      }
+      .color-blue {
+        color: #223252;
+      }
+      .tagline {
+        font-size: 1.9rem;
+        font-weight: bold;
+        line-height: 24px;
+      }
+      .sub-text {
+        font-size: 1.5rem;
+        width: 40%;
+        margin-top: 1em;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: capitalize;
+      }
+      /* two column layout */
+      .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .col > img {
+        width: 100%;
+        display: block;
+      }
+      .col {
+        width: 50%;
+      }
+      .btn {
+        display: inline-block;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: white;
+        margin-top: 2rem;
+        background-color: #0d4f82;
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+      }
+      .left-col {
+        width: 50%;
+      }
+      .right-col {
+        color: #000;
+        margin-right: 1.8rem;
+      }
+      .right-col > h2,
+      .h2 {
+        color: #223252;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      .right-col > p {
+        margin-top: 1rem;
+      }
+      .para {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+      }
+      /* cards items */
+      .card-container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .card {
+        display: flex;
+
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+      }
+      .card-img img {
+        width: 30px;
+        color: #0d4f82;
+        filter: invert(38%) sepia(66%) saturate(3773%) hue-rotate(208deg)
+          brightness(94%) contrast(91%);
+      }
+      .card-heading {
+        font-size: 1.2rem;
+        color: #223252;
+        font-weight: 900;
+      }
+      .card-para {
+        margin-top: 5px;
+      }
+      /* FOUR column Layout */
+      .wrapper {
+        width: 80%;
+        margin: auto;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .wrapper div img {
+        width: 120px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .m-top-4 {
+        margin-top: 4rem;
+      }
+      .m-top-1 {
+        margin: auto;
+        margin-top: 1rem;
+      }
+      .w-70 {
+        width: 70%;
+      }
+      /* CTA */
+      .cta {
+        background-color: #f0f1f3;
+        display: flex;
+
+        padding: 4rem;
+      }
+      .cta h4 {
+        font-size: 2rem;
+        width: 50%;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .buttons {
+        width: 50%;
+        margin-left: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .act-btn {
+        text-decoration: none;
+        font-size: 12px;
+        background-color: #223252;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        color: #fff;
+      }
+      /* vector image */
+      .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 40%;
+      }
+      .col .vector-img {
+        width: 80px;
+      }
+      .center {
+        display: flex;
+        width: 75%;
+        margin: 4rem auto;
+      }
+      .list-sec {
+        width: 70%;
+      }
+
+      ul li {
+        margin-top: 1.2rem;
+        list-style: none;
+      }
+      ul li::before {
+        content: "\2022";
+        color: #223252; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 20px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -26px;
+      }
+      /* benefits section */
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+      /* image box */
+      .img-box {
+        width: 25%;
+      }
+      .img-box img {
+        display: block;
+        width: 100%;
+      }
+      .sm-heading {
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      .sm-para {
+        text-align: left;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+
+      /* footer */
+      footer {
+        display: block;
+        background-color: #000;
+        color: #ffffff;
+        width: 100%;
+        margin: 0;
+      }
+      footer h5 {
+        padding: 4rem 2rem;
+        font-size: 1.7rem;
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .banner-img {
+          height: 300px;
+        }
+        .content {
+          height: 300px;
+        }
+        .wrapper {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .wrapper div img {
+          width: 100%;
+        }
+        .row {
+          align-items: flex-start;
+        }
+        .card-container {
+          position: relative;
+          left: -165px;
+          width: 360px;
+        }
+        .row.center {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: auto;
+          margin: 1.5rem 6rem;
+        }
+        .list-sec {
+          width: 100%;
+        }
+        .left-img {
+          justify-self: center;
+          align-self: center;
+          margin-top: 2rem;
+        }
+        .cta {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .cta h4 {
+          width: 90%;
+          text-align: center;
+        }
+        .buttons {
+          margin-top: 2rem;
+          width: 100%;
+        }
+        .section {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .section .img-box {
+          width: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- LOGO & SOCIAL MEDIA SECTION -->
+        <div class="logo-box">
+          <img
+            class="logo-img"
+            src="https://i.postimg.cc/yNGLHFNm/bookify-logo.png"
+            alt=""
+          />
+        </div>
+        <!-- banner -->
+        <div class="banner">
+          <div class="content">
+            <h1 class="tagline">Looking For Exceptional</h1>
+            <h1 class="tagline">Payroll Solutions?</h1>
+            <h1 class="tagline">
+              Get Yours With <span class="color-blue">Thebookify</span>
+            </h1>
+            <p class="sub-text">
+              You care for your employees a lot; let us help you out a little.
+            </p>
+            <a href="https://thebookify.com/payroll-services/" class="btn">Connect with Our Payroll Specialist</a>
+          </div>
+          <div class="banner-img"></div>
+        </div>
+      </header>
+
+      <!-- TWO COLUMN SECTION -->
+      <div class="row">
+        <div class="col left-col">
+          <img
+            src="https://i.postimg.cc/j5B7Tnjm/payroll-services-3x.png"
+            alt=""
+          />
+        </div>
+        <div class="col right-col">
+          <h2 class="h2 w-50">What We Offer</h2>
+          <p class="para w-50">
+            TheBookify has a number of payroll solutions for your business that
+            increase your <b>efficiency by 2x </b>while
+            <b>decreasing costs by almost 50%</b>
+          </p>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://i.postimg.cc/L8xrFrPG/reports-icon.webp"
+                  alt="tax deposite icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Easy Report Fillings</h3>
+                <p class="para card-para">
+                  Ensure absolute quick and responsive work
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://i.postimg.cc/Gt2tMPJD/dashboard.png"
+                  alt="accessible dashboard icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Employees Aceessible Dashboard</h3>
+                <p class="para card-para">
+                  Helps in less confusion and more transparency
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://i.postimg.cc/CKQD4D72/tax-deposit.png"
+                  alt="tax deposite icon"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-heading">Payroll Tax Deposit</h3>
+                <p class="para card-para">
+                  Handling your tax solutions for a minimal possible hustle
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOUR COLUMN SECTION -->
+      <div class="wrapper">
+        <div>
+          <img
+            src="https://i.postimg.cc/xCw0bgvj/grid-image-1.png"
+            alt="grid image 1"
+          />
+        </div>
+        <div>
+          <img
+            src="https://i.postimg.cc/rFvSwL07/grid-image-2.png"
+            alt="grid image 2"
+          />
+        </div>
+        <div>
+          <img
+            src="https://i.postimg.cc/Fsty94J8/grid-image-3.png"
+            alt="grid image 3"
+          />
+        </div>
+        <div>
+          <img
+            src="https://i.postimg.cc/Qx0dfgsm/grid-image-4.png"
+            alt="grid image 4"
+          />
+        </div>
+      </div>
+
+      <!-- Center heading and para -->
+      <h3 class="h2 text-center m-top-4">BEST-IN-CLASS FEATURES</h3>
+      <p class="para w-70 text-center m-top-1">
+        TheBookify's payroll solutions will benefit your business through
+        <b>innovation, consistency, </b>and <b>progress</b>
+      </p>
+      <!-- Two Column Layout -->
+      <div class="row center">
+        <div class="col list-sec">
+          <ul>
+            <li class="para">
+              <b class="color-blue">100% Convenience</b> at your doorstep
+            </li>
+            <li class="para">
+              <b class="color-blue">Affordable</b> with minimum cost
+            </li>
+            <li class="para">
+              <b class="color-blue">24/7 Support</b> for assistance at any time.
+            </li>
+            <li class="para">
+              <b class="color-blue">100% Precision</b> with real-time updates
+              and changes
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex left-img">
+          <img
+            src="https://i.postimg.cc/C1CS5KTP/first-phone.png"
+            alt="Phone Vector"
+            class="vector-img"
+          />
+          <img
+            src="https://i.postimg.cc/MZhNNSCX/Second-Phone.png"
+            alt="Phone Vector"
+            class="vector-img"
+          />
+        </div>
+      </div>
+
+      <!-- Center heading and para -->
+      <h3 class="h2 text-center m-top-4">YOUR DIRECT BENEFITS</h3>
+      <div class="section">
+        <div class="img-box">
+          <img
+            src="https://i.postimg.cc/Prv1S3hY/benefit-1.png"
+            alt="benefit-1"
+          />
+          <h3 class="text-center color-blue sm-heading">Cost Efficient</h3>
+          <p class="sm-para">
+            Our method is absolutely reasonable as compared to traditional
+            methods
+          </p>
+        </div>
+        <!-- 2nd img box -->
+        <div class="img-box">
+          <img
+            src="https://i.postimg.cc/cCzb2wZD/benefit-2.png"
+            alt="benefit-1"
+          />
+          <h3 class="text-center color-blue sm-heading">
+            Increased Productivity
+          </h3>
+          <p class="sm-para">
+            We handle your payroll activities which enables you more time for
+            work
+          </p>
+        </div>
+
+        <!-- 3rd  img box -->
+        <div class="img-box">
+          <img
+            src="https://i.postimg.cc/tRnwnvzw/benefit-3.png"
+            alt="benefit-1"
+          />
+          <h3 class="text-center color-blue sm-heading">No Hustle</h3>
+          <p class="sm-para">
+            No Stress and chaos for you as we will take care of everything
+          </p>
+        </div>
+      </div>
+      <!-- cta  -->
+      <div class="cta">
+        <h4 class="color-blue">GREAT DEALS AND SOLUTIONS WAITING FOR YOU.</h4>
+        <div class="buttons">
+          <a href="tel:+1-551-348-1040" class="act-btn">CALL US</a>
+          <a href="mailto:info@thebookify.com" class="act-btn">E-MAIL US</a>
+        </div>
+      </div>
+      <!-- FOOTER SECTION -->
+      <footer>
+        <h5>Connect With Our Certified Experts to Get the Help You Need</h5>
+      </footer>
+    </div>
+  </body>
+</html>
